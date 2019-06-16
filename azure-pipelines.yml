@@ -21,11 +21,11 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '.\MyToDoList\Server\MyToDoList\MyToDoListCore'
+    projects: '.\**.csproj'
     feedsToUse: 'select'
 
 
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '.\MyToDoList\Server\MyToDoList\MyToDoListCore'
+    projects: '.\**.csproj'
