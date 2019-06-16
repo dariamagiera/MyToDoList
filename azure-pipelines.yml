@@ -20,5 +20,12 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
+    command: 'restore'
+    projects: '.\MyToDoList\Server\MyToDoList\MyToDoListCore'
+    feedsToUse: 'select'
+
+
+- task: DotNetCoreCLI@2
+  inputs:
     command: 'build'
-    projects: '.\\Server\\MyToDoList\\MyToDoListCore'
+    projects: '.\MyToDoList\Server\MyToDoList\MyToDoListCore'
