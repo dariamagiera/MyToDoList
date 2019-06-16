@@ -18,13 +18,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: NuGetCommand@2
-  displayName: "NuGet Restore"
-  inputs:
-    restoreSolution: '**/*.csproj'
-    feedsToUse: config
-    nugetConfigPath: NuGet.config # you should always have a NuGet.config file!
-
 # Build your .NET Core project (but avoid restore your packages again)
 
 - task: DotNetCoreCLI@2
