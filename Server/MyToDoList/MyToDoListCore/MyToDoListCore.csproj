@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp2.2</TargetFramework>
-        <RootNamespace>MyToDoListAPI</RootNamespace>
+        <RootNamespace>MyToDoList</RootNamespace>
     </PropertyGroup>
 
 </Project>
