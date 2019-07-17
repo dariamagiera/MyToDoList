@@ -18,7 +18,18 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+# Build your .NET Core project (but avoid restore your packages again)
+
 - task: DotNetCoreCLI@2
+  displayName: ".NET build"
   inputs:
-    command: 'build'
-    projects: '.\Server\MyToDoList\MyToDoListCore'
+    projects: '**/*.csproj'
+    arguments: --configuration $(BuildConfiguration) --no-restore
+
+# Run your unit tests
+
+- task: DotNetCoreCLI@2
+  displayName: ".NET test"
+  inputs:
+    command: test
+    projects: 'Server\MyToDoList\Tests\**.csproj'
