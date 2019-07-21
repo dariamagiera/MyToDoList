@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32695D3AC7AFF57FE8E620D9 /* Pods_MyToDoListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09B14823F1A445524B32F3C /* Pods_MyToDoListTests.framework */; };
+		019F0315CFA2FA792424BAFB /* Pods_MyToDoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250D36E0D3F67949750236FF /* Pods_MyToDoList.framework */; };
+		6033F216251A65CD832A42BE /* Pods_MyToDoListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C74C036120B4EAD5C9374D /* Pods_MyToDoListTests.framework */; };
 		ADE27C6822DF943D00D1D8B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE27C6722DF943D00D1D8B8 /* AppDelegate.swift */; };
 		ADE27C6A22DF943D00D1D8B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE27C6922DF943D00D1D8B8 /* ViewController.swift */; };
 		ADE27C6D22DF943D00D1D8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE27C6B22DF943D00D1D8B8 /* Main.storyboard */; };
@@ -27,8 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		250D36E0D3F67949750236FF /* Pods_MyToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0BC443DFA0D0CADDE2956 /* Pods-MyToDoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoListTests.debug.xcconfig"; path = "Target Support Files/Pods-MyToDoListTests/Pods-MyToDoListTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B1C268563005DA836121C6F /* Pods_MyToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C74C036120B4EAD5C9374D /* Pods_MyToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5AACEB30486386896B9B32 /* Pods-MyToDoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoList.release.xcconfig"; path = "Target Support Files/Pods-MyToDoList/Pods-MyToDoList.release.xcconfig"; sourceTree = "<group>"; };
 		ADE27C6422DF943D00D1D8B8 /* MyToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE27C6722DF943D00D1D8B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		ADE27C7E22DF943F00D1D8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C77C1B56A46FF2A18F179A /* Pods-MyToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoList.debug.xcconfig"; path = "Target Support Files/Pods-MyToDoList/Pods-MyToDoList.debug.xcconfig"; sourceTree = "<group>"; };
 		DB8ABFB2F76636B3585D0487 /* Pods-MyToDoListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToDoListTests.release.xcconfig"; path = "Target Support Files/Pods-MyToDoListTests/Pods-MyToDoListTests.release.xcconfig"; sourceTree = "<group>"; };
-		F09B14823F1A445524B32F3C /* Pods_MyToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				019F0315CFA2FA792424BAFB /* Pods_MyToDoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32695D3AC7AFF57FE8E620D9 /* Pods_MyToDoListTests.framework in Frameworks */,
+				6033F216251A65CD832A42BE /* Pods_MyToDoListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +122,8 @@
 		B2728316275512A0FE5E9BC5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4B1C268563005DA836121C6F /* Pods_MyToDoList.framework */,
-				F09B14823F1A445524B32F3C /* Pods_MyToDoListTests.framework */,
+				250D36E0D3F67949750236FF /* Pods_MyToDoList.framework */,
+				50C74C036120B4EAD5C9374D /* Pods_MyToDoListTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +139,7 @@
 				ADE27C6022DF943D00D1D8B8 /* Sources */,
 				ADE27C6122DF943D00D1D8B8 /* Frameworks */,
 				ADE27C6222DF943D00D1D8B8 /* Resources */,
+				DB50F2EFC5ACC09BCAAF4057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +270,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB50F2EFC5ACC09BCAAF4057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyToDoList/Pods-MyToDoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyToDoList/Pods-MyToDoList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
