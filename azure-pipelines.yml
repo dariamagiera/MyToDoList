@@ -38,9 +38,9 @@ steps:
 
 - task: CocoaPods@0
   inputs:
-    forceRepoUpdate: true
-    projectDirectory: './Client/iOS/MyToDoList/'
-  displayName: 'pod install using the CocoaPods task with a forced repo update and a custom project directory'
+    workingDirectory: './Client/iOS/MyToDoList/'
+    forceRepoUpdate: false
+
 
 - task: Xcode@5
   inputs:
