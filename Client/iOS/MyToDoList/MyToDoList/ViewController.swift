@@ -13,8 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let dataFromNetwork = Data()
-        let json = try! JSON(data: dataFromNetwork)
+        
         // Do any additional setup after loading the view.
     }
 
