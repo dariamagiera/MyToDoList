@@ -51,3 +51,14 @@ steps:
     xcWorkspacePath: '**/MyToDoList.xcworkspace'
     xcodeVersion: '10' # Options: 8, 9, 10, default, specifyPath
     signingOption: 'nosign' # Options: nosign, default, manual, auto
+
+- task: Xcode@5
+  inputs:
+    actions: 'test'
+    scheme: 'MyToDoListTests'
+    sdk: 'iphoneos'
+    configuration: 'Release'
+    xcWorkspacePath: '**/MyToDoList.xcworkspace'
+    xcodeVersion: '10' # Options: 8, 9, 10, default, specifyPath
+    signingOption: 'nosign' # Options: nosign, default, manual, auto
+
