@@ -24,7 +24,7 @@ steps:
   displayName: ".NET build"
   inputs:
     projects: '**/*.csproj'
-    arguments: --configuration $(BuildConfiguration) --no-restore
+    arguments: ''
 
 # Run your unit tests
 
