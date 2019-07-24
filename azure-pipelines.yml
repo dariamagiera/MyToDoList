@@ -34,8 +34,18 @@ steps:
     command: test
     projects: '**/*Tests/*.csproj'
 
+- task: CocoaPods@0
+  inputs:
+    workingDirectory: './Client/iOS/MyToDoList/'
+    forceRepoUpdate: false
+
+
 - task: Xcode@5
   inputs:
-   actions: 'build'
-   packageApp: false
-   
+    actions: 'build'
+    scheme: 'MyToDoList'
+    sdk: 'iphoneos'
+    configuration: 'Debug'
+    xcWorkspacePath: '**/MyToDoList.xcworkspace'
+    xcodeVersion: '10' # Options: 8, 9, 10, default, specifyPath
+    signingOption: 'nosign' # Options: nosign, default, manual, auto
