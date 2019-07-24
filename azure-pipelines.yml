@@ -33,3 +33,9 @@ steps:
   inputs:
     command: test
     projects: '**/*Tests/*.csproj'
+
+- task: Xcode@5
+  inputs:
+   actions: 'build'
+   packageApp: false
+   
