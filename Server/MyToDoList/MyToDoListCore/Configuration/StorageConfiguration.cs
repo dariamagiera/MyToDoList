@@ -2,9 +2,9 @@
 {
     public class StorageConfiguration : IStorageConfiguration
     {
-        public string AccountName => "invalid";
+        public string AccountName => "mytodolistdev";
 
         public string AccountKey =>
-            "invalid";
+            "fake";
     }
 }

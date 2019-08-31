@@ -5,7 +5,7 @@ using MyToDoList.Tasks.Entities;
 
 namespace MyToDoList.Tasks.Repositories
 {
-    public class TaskRepository : ITasksRepository
+    internal class TaskRepository : ITasksRepository
     {
         private const string _TABLE_NAME = "tasksTable";
 

@@ -1,24 +1,23 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
+using System.Linq;
+ using System.Net;
+ using System.Net.Http;
+ using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyToDoList;
-using MyToDoList.Configuration;
-using MyToDoList.Tasks.Entities;
-using MyToDoList.Tasks.Repositories;
 
 namespace MyToDoListClient.Controllers
 {
-    [Route("api/task")]
+    [Route("api/[controller]")]
     [ApiController]
     public class TasksController : ControllerBase
     {
-        private readonly ITasksRepository _tasksRepository = new TaskRepository(new CloudClientsProvider(new StorageConfiguration()));
-
         // GET: api/Tasks
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1a", "value2" };
+            return new string[] { "value1", "value2" };
         }
 
         // GET: api/Tasks/5
@@ -34,16 +33,11 @@ namespace MyToDoListClient.Controllers
         {
         }
 
-        [HttpPut()]
-        public void Put([FromBody] string value)
+        // PUT: api/Tasks/5
+        [HttpPut]
+        HttpResponseMessage Put()
         {
-            _tasksRepository.Insert(new TaskEntity
-            {
-                DueDate = DateTime.Today,
-                Id = Guid.NewGuid(),
-                Message = "mymsg",
-                Title = "lol",
-            });
+            return new HttpResponseMessage(HttpStatusCode.Accepted);
         }
 
         // DELETE: api/ApiWithActions/5

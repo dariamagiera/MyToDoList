@@ -3,7 +3,7 @@ using Microsoft.WindowsAzure.Storage.Table;
 
 namespace MyToDoList
 {
-    public interface ICloudClientsProvider
+    internal interface ICloudClientsProvider
     {
         CloudStorageAccount GetCloudStorageAccount();
         CloudTableClient GetCloudTableClient();

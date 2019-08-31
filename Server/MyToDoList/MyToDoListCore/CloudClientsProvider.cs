@@ -5,7 +5,7 @@ using MyToDoList.Configuration;
 
 namespace MyToDoList
 {
-    public class CloudClientsProvider : ICloudClientsProvider
+    internal class CloudClientsProvider : ICloudClientsProvider
     {
         private const bool _USE_HTTPS = true;
         private readonly IStorageConfiguration _configuration;
