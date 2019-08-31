@@ -5,4 +5,12 @@
         <RootNamespace>MyToDoList</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Users\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="WindowsAzure.Storage" Version="7.2.1" />
+    </ItemGroup>
+
 </Project>
