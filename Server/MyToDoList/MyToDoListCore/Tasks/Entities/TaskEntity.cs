@@ -5,17 +5,16 @@ namespace MyToDoList.Tasks.Entities
 {
     public class TaskEntity : TableEntity
     {
-        public TaskEntity(string userId, string rowKey)
+        public TaskEntity(string userId, Guid taskId)
         {
             base.PartitionKey = userId;
-            base.RowKey = rowKey;
+            base.RowKey = taskId.ToString();
         }
 
         public TaskEntity()
         {
         }
 
-        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Message { get; set; }
         public DateTime DueDate { get; set; }

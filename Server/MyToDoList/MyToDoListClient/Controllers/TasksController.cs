@@ -1,11 +1,10 @@
-﻿ using System;
-using System.Collections.Generic;
-using System.Linq;
- using System.Net;
- using System.Net.Http;
- using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿using System.Collections.Generic;
+using System.Net.Sockets;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using MyToDoList.Tasks;
+using MyToDoList.Tasks.Entities;
+using MyToDoList.Tasks.Repositories;
 
 namespace MyToDoListClient.Controllers
 {
@@ -13,37 +12,30 @@ namespace MyToDoListClient.Controllers
     [ApiController]
     public class TasksController : ControllerBase
     {
-        // GET: api/Tasks
+        private readonly ITasksRepository _tasksRepository = TaskRepositoryFactory.Create();
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<TaskEntity>> Get([FromBody] string uid)
         {
-            return new string[] { "value1", "value2" };
+            return await _tasksRepository.GetAll(uid);
         }
 
-        // GET: api/Tasks/5
         [HttpGet("{id}", Name = "Get")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST: api/Tasks
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT: api/Tasks/5
         [HttpPut]
-        HttpResponseMessage Put()
+        public void Put([FromBody] TaskEntity task)
         {
-            return new HttpResponseMessage(HttpStatusCode.Accepted);
+            _tasksRepository.Insert(task);
         }
 
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("{uid}/{taskId}")]
+        public void Delete(string uid, string taskId)
         {
+            _tasksRepository.Delete(uid, taskId);
         }
     }
 }

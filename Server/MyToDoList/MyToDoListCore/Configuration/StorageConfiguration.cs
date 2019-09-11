@@ -2,9 +2,8 @@
 {
     public class StorageConfiguration : IStorageConfiguration
     {
-        public string AccountName => "mytodolistdev";
+        public string AccountName => "mytodoliststoragedev";
 
-        public string AccountKey =>
-            "fake";
+        public string AccountKey => "agd";
     }
 }

@@ -418,3 +418,4 @@ healthchecksdb
 MigrationBackup/
 
 *.idea/
+/Server/MyToDoList/MyToDoListClient/service-account.json
